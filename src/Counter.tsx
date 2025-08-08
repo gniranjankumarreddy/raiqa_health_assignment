@@ -6,9 +6,14 @@ function Counter() {
   const [count, setCount] = useState(0);
   const [numbers, setNumbers] = useState([]);
 
+  //incrementing of a number
   const increment = () => setCount(prev => prev + 1);
+  //decrementing of a number not less than '0'
   const decrement = () => setCount(prev => (prev > 0 ? prev - 1 : 0));
 
+  /*Adding number to the list
+  if number is greater than '0'
+  including no duplicates*/
   const addNumber = () => {
     if (count > 0 && !numbers.includes(count)) {
       setNumbers(prev => [...prev, count]);
@@ -16,6 +21,7 @@ function Counter() {
     }
   };
 
+  //sorting the number in ascending or descending order
   const sortList = (order: "asc" | "desc") => {
     const sorted = [...numbers].sort((a, b) =>
       order === "asc" ? a - b : b - a
