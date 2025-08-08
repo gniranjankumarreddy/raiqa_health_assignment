@@ -1,0 +1,75 @@
+.list-view {
+  margin-top: 20px;
+}
+
+.sort-buttons {
+  margin-bottom: 10px;
+}
+
+.sort-buttons button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.number-list {
+  list-style: none;
+  padding: 0;
+}
+
+.number-list li {
+  padding: 6px;
+  margin: 4px 0;
+  background: #e0e0e0;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.highlight-highest {
+  background: green !important;
+  font-weight: bold;
+}
+
+.highlight-lowest {
+  background: red !important;
+  font-weight: bold;
+}
+
+.empty-msg {
+  color: #777;
+  font-style: italic;
+}
+
+.asc-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.asc-btn:hover {
+  background: orange;
+}
+
+.desc-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.desc-btn:hover {
+  background: orange;
+}
