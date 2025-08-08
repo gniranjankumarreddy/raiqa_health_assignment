@@ -2,7 +2,7 @@ import React from "react";
 import "./ListView.css";
 
 function ListView({ numbers, onSort })  {
-  // Determine highest & lowest numbers
+  //Finding highest & lowest numbers
   const highest = numbers.length ? Math.max(...numbers) : null;
   const lowest = numbers.length ? Math.min(...numbers) : null;
 
